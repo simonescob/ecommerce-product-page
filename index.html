@@ -9,36 +9,164 @@
   <title>Frontend Mentor | E-commerce product page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
 </head>
 <body>
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+  <nav class="navbar">
+    
+    <div class="side-left">
+      <div class="title">
+        <a href="#">
+          Sneaker
+        </a>
+      </div>
 
-  Sneaker Company
+      <li><a href="#">Collections</a></li>
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      
+    </div>
 
-  Fall Limited Edition Sneakers
+    <div class="side-right">
 
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
+      <div class="card">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
 
-  $125.00
-  50%
-  $250.00
+      <div class="user-profile">
+        <img src="./images/image-avatar.png" alt="imagen">
+      </div>
 
-  0
-  Add to cart
+    </div>
+
+  </nav>
+
+  <section class="page-product">
+
+    <div class="gallery">
+      
+      <div id="image-slider" class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            
+            <li class="splide__slide">
+              <img src="./images/image-product-1.jpg">
+            </li>
+            <li class="splide__slide">
+              <img src="./images/image-product-2.jpg">
+            </li>
+            <li class="splide__slide">
+              <img src="./images/image-product-3.jpg">
+            </li>
+            <li class="splide__slide">
+              <img src="./images/image-product-4.jpg">
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+      <br>
+
+      <div id="thumbnail-slider" class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            
+            <li class="splide__slide">
+              <img src="./images/image-product-1.jpg">
+            </li>
+            <li class="splide__slide">
+              <img src="./images/image-product-2.jpg">
+            </li>
+            <li class="splide__slide">
+              <img src="./images/image-product-3.jpg">
+            </li>
+            <li class="splide__slide">
+              <img src="./images/image-product-4.jpg">
+            </li>
+
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="info">
+      
+      <div class="company">
+        Sneaker company
+      </div>
+
+      <div class="product-title">
+        Fall Limited Edition Sneakers
+      </div>
+
+      <div class="description">
+        These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </div>
+    
+      <div class="price">
+      
+        <div class="price-up">
+
+          <div class="price-current">
+            $125.00
+          </div>
+        
+          <div class="discound">
+            50%
+          </div>
+        
+        </div>
+
+        <div class="price-old">
+          $250.00
+        </div>
+
+      
+      </div>
+
+      <div class="add-card">
+
+        <div class="product-amount">
+          <div class="less">
+            <i class="fa-solid fa-minus"></i>
+          </div>
+          <div class="amount">0</div>
+          <div class="more">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+
+        <button class="btn-add-card">
+          <i class="fa-solid fa-cart-shopping"></i>
+          Add to cart
+        </button>
+
+      </div>
+
+    </div>
+
+    
+  </section>
+
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="http://simonescob.github.io/">Simon Escobar</a>.
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
