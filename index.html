@@ -42,6 +42,32 @@
         <i class="fa-solid fa-cart-shopping"></i>
       </div>
 
+      <div id="card-products" class="card-products hide"></div>
+
+      <div id="modal-card" class="modal-card hide">
+        <div class="modal-title">
+          Cart
+        </div>
+        <div class="modal-content">
+          <div class="content-empty">your cart is empty</div>
+          <div class="product hide">
+            <div class="item">
+              <img src="./images/image-product-1-thumbnail.jpg" alt="item-product">
+              <div class="product-title">
+                Fall Limited Edition Sneakers
+                <br> $125.00 x <span id="product-amount-cart" ></span> <span id="result" product-amount="125.00"></span>
+              </div>
+              <div class="btn-delete">
+                <i class="fas fa-trash-alt"></i>
+              </div>
+            </div>
+            <div class="checkout">
+              <button>Checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="user-profile">
         <img src="./images/image-avatar.png" alt="imagen">
       </div>
@@ -156,10 +182,8 @@
       </div>
 
     </div>
-
     
   </section>
-
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6" target="_blank">Frontend Mentor</a>. 
