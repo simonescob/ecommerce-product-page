@@ -22,6 +22,9 @@
   <nav class="navbar">
     
     <div class="side-left">
+      <div class="menu hide">
+        <img src="./images/icon-menu.svg" alt="" srcset="">
+      </div>
       <div class="title">
         <a href="#">
           Sneaker
@@ -39,7 +42,7 @@
     <div class="side-right">
 
       <div class="card">
-        <i class="fa-solid fa-cart-shopping"></i>
+        <img src="./images/icon-cart.svg" width="30px" alt="" srcset="">
       </div>
 
       <div id="card-products" class="card-products hide"></div>
@@ -74,7 +77,22 @@
 
     </div>
 
+    <div class="sidebar">
+
+      <div class="close">
+        <img src="./images/icon-close.svg" alt="">
+      </div>
+
+      <li><a href="#">Collections</a></li>
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </div>
+
   </nav>
+
+  <div class="box-blur"></div>
 
   <section class="page-product">
 
@@ -165,16 +183,16 @@
       <div class="add-card">
 
         <div class="product-amount">
-          <div class="less">
+          <button class="less">
             <i class="fa-solid fa-minus"></i>
-          </div>
+          </button>
           <div class="amount">0</div>
-          <div class="more">
+          <button class="more">
             <i class="fa-solid fa-plus"></i>
-          </div>
+          </button>
         </div>
 
-        <button class="btn-add-card">
+        <button id="add-to-cart" class="btn-add-card">
           <i class="fa-solid fa-cart-shopping"></i>
           Add to cart
         </button>
